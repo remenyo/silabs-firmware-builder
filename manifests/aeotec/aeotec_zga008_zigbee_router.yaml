@@ -1,5 +1,5 @@
 name: Aeotec ZGA008 Zigbee Router
-device: EFR32MG21A010F1024IM32
+device: MGM210PB22JIA
 base_project: src/zigbee_router
 filename: "{manifest_name}_{ezsp_version}_{baudrate}_{fw_variant}"
 sdk: "simplicity_sdk:2024.12.0"
@@ -49,7 +49,7 @@ c_defines:
   SL_ZIGBEE_MAX_END_DEVICE_CHILDREN: 32
   SL_ZIGBEE_BINDING_TABLE_SIZE: 32
 
-  SL_RAIL_UTIL_RSSI_OFFSET: -11
+  # SL_RAIL_UTIL_RSSI_OFFSET: -11
 
   # all zigbee channels
   SL_ZIGBEE_AF_PLUGIN_NETWORK_STEERING_CHANNEL_MASK: 0x07fff800
